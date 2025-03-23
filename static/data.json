@@ -1,0 +1,66 @@
+{
+  "studio_name": "Teneke Kafalar Studios",
+  "games": [
+    {
+      "title": "Feign",
+      "description": "Feign is a role-playing game with up to 12 players set in a small town where innocents, imposters, and neutrals coexist. Use your role at night to win and send a person from the village in the morning.",
+      "links": {
+        "steam": "https://store.steampowered.com/app/Feign",
+        "google_play": "https://play.google.com/store/apps/details?id=com.tenekekafalar.feign"
+      }
+    },
+    {
+      "title": "Feather Party",
+      "description": "Welcome to the fantastic party on the adorable planet of chicks! Feather Party is a multiplayer party game for up to 8 players. Engage in a diverse array of fun mini-games with friends or against rivals to be the winner of this party!",
+      "links": {
+        "steam": "https://store.steampowered.com/app/FeatherParty"
+      }
+    },
+    {
+      "title": "Throwia",
+      "description": "Welcome to the next-generation MMO world of Throwia... Design your character as you wish, choose the weapons that suit your play style, level up, and get stronger... For new equipment, blast or dig your opponents... Build your team and reach the top of the rankings!",
+      "links": {
+        "steam": "https://store.steampowered.com/app/Throwia"
+      }
+    },
+    {
+      "title": "Trakonius",
+      "description": "A gladiator fighting for his freedom in the sands of the arena... Unaware of the prophecy, Trakonius has fallen into the arena through the machinations of the senate. Even the gods will help him in his tough battle for freedom in the name of justice, but still can he win his freedom?",
+      "links": {
+        "steam": "https://store.steampowered.com/app/Trakonius"
+      }
+    },
+    {
+      "title": "Hoop Fighters",
+      "description": "Knock your friends down to the ground and destroy their hoops! Hoop Fighters is an online basketball game for up to 6 players, free from rules. Create your character and join the game. Trip up or slap opponents, do whatever it takes to grab the ball. Remember, there are no rules in Hoop Fighters!",
+      "links": {
+        "steam": "https://store.steampowered.com/app/HoopFighters"
+      }
+    },
+    {
+      "title": "Ocean Gap",
+      "description": "Dive into a co-op underwater horror game. Find and destroy energy cubes to stop the secret organization's experiments. Don't get lost in dark and deep waters. Don't get caught but breathe!",
+      "links": {
+        "steam": "https://store.steampowered.com/app/OceanGap"
+      }
+    },
+    {
+      "title": "Surviwall",
+      "description": "Surviwall is a survival and roguelike game. Players struggle to survive while trapped inside the walls. A secret awaits the players inside the walls. With the changing platform, different challenges and surprises await players every time.",
+      "links": {
+        "steam": "https://store.steampowered.com/app/Surviwall"
+      }
+    }
+  ],
+  "contact_info": {
+    "email": "business@tenekekafalar.com",
+    "social_media": {
+      "steam": "https://store.steampowered.com/developer/TenekeKafalarStudios",
+      "youtube": "https://www.youtube.com/tenekekafalar",
+      "twitch": "https://www.twitch.com/tenekekafalar_tk",
+      "instagram": "https://www.instagram.com/tenekekafalar",
+      "discord": "https://www.discord.gg/tenekekafalar",
+      "linktree": "https://linktr.ee/tenekekafalar"
+    }
+  }
+}
