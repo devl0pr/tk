@@ -14,7 +14,7 @@
 
 import adapter from '@sveltejs/adapter-static';
 
-const base = process.env.GITHUB_ACTIONS ? '/tk' : '';
+const base = '/tk';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
