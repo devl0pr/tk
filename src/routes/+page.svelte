@@ -3,13 +3,13 @@
     import { base } from '$app/paths';
 
     const cards = [
-        { imageSrc: base + "/img/feign_header.jpeg", title: "Feign", description: "Beautiful nature view" },
-        { imageSrc: base + "/img/feather_header.jpeg", title: "Feather Party", description: "Urban cityscape" },
-        { imageSrc: base + "/img/throwia_header.jpeg", title: "Throwia", description: "Majestic mountains" },
-        { imageSrc: base + "/img/tra_header.jpeg", title: "Trakonius", description: "Deep blue ocean" },
-        { imageSrc: base + "/img/hoop_header.jpeg", title: "Hoop Fighters", description: "Deep blue ocean" },
-        { imageSrc: base + "/img/ocean_header.jpeg", title: "Ocean Gap", description: "Deep blue ocean" },
-        { imageSrc: base + "/img/surviwall_header.jpeg", title: "Surviwall", description: "Deep blue ocean" },
+        { slug: "feign", imageSrc: base + "/img/feign_header.jpeg", title: "Feign", description: "Beautiful nature view" },
+        { slug: "feather-party", imageSrc: base + "/img/feather_header.jpeg", title: "Feather Party", description: "Urban cityscape" },
+        { slug: "throwia", imageSrc: base + "/img/throwia_header.jpeg", title: "Throwia", description: "Majestic mountains" },
+        { slug: "trakonius", imageSrc: base + "/img/tra_header.jpeg", title: "Trakonius", description: "Deep blue ocean" },
+        { slug: "hoop-fighters", imageSrc: base + "/img/hoop_header.jpeg", title: "Hoop Fighters", description: "Deep blue ocean" },
+        { slug: "ocean-gap", imageSrc: base + "/img/ocean_header.jpeg", title: "Ocean Gap", description: "Deep blue ocean" },
+        { slug: "surviwall", imageSrc: base + "/img/surviwall_header.jpeg", title: "Surviwall", description: "Deep blue ocean" },
     ];
 </script>
 
@@ -20,7 +20,9 @@
     </div>
     <div class="grid">
         {#each cards as card}
-            <Card imageSrc={card.imageSrc} title={card.title} description={card.description} />
+            <a href={`/games/${card.slug}`} class="card-link">
+                <Card imageSrc={card.imageSrc} title={card.title} description={card.description} />
+            </a>
         {/each}
     </div>
 </div>
