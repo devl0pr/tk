@@ -13,7 +13,7 @@
     <div class="grid">
         {#each data.games as card}
             <a href={`${base}/games/${card.slug}`} class="card-link">
-                <Card imageSrc={base + '/img/' + card.imageSrc} title={card.title} description={card.description} />
+                <Card image={base + '/img/' + card.image} title={card.title} description={card.description} />
             </a>
         {/each}
     </div>
@@ -32,7 +32,7 @@
         margin: 50px auto;
     }
 
-    .container-title {
+    .container-title h2 {
         font-size: 1.56rem;
         text-transform: uppercase;
         font-weight: 600;

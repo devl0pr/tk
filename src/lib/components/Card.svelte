@@ -1,14 +1,13 @@
 <script>
-    export let imageSrc = "";
+    export let image = "";
     export let title = "Card Title";
     export let description = "This is a sample description.";
 </script>
 
 <div class="card">
-    <img src={imageSrc} alt={title} class="card-image" />
+    <img src={image} alt={title} class="card-image" />
     <div class="card-content">
         <h2>{title}</h2>
-<!--        <p>{description}</p>-->
     </div>
 </div>
 

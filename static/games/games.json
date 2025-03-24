@@ -1,44 +1,37 @@
 [
   {
     "slug": "feign",
-    "imageSrc": "feign_header.jpeg",
-    "title": "Feign",
-    "description": "Beautiful nature view"
+    "image": "feign_header.jpeg",
+    "title": "Feign"
   },
   {
     "slug": "feather-party",
-    "imageSrc": "feather_header.jpeg",
-    "title": "Feather Party",
-    "description": "Urban cityscape"
+    "image": "feather_header.jpeg",
+    "title": "Feather Party"
   },
   {
     "slug": "throwia",
-    "imageSrc": "throwia_header.jpeg",
-    "title": "Throwia",
-    "description": "Majestic mountains"
+    "image": "throwia_header.jpeg",
+    "title": "Throwia"
   },
   {
     "slug": "trakonius",
-    "imageSrc": "tra_header.jpeg",
-    "title": "Trakonius",
-    "description": "Deep blue ocean"
+    "image": "tra_header.jpeg",
+    "title": "Trakonius"
   },
   {
     "slug": "hoop-fighters",
-    "imageSrc": "hoop_header.jpeg",
-    "title": "Hoop Fighters",
-    "description": "Deep blue ocean"
+    "image": "hoop_header.jpeg",
+    "title": "Hoop Fighters"
   },
   {
     "slug": "ocean-gap",
-    "imageSrc": "ocean_header.jpeg",
-    "title": "Ocean Gap",
-    "description": "Deep blue ocean"
+    "image": "ocean_header.jpeg",
+    "title": "Ocean Gap"
   },
   {
     "slug": "surviwall",
-    "imageSrc": "surviwall_header.jpeg",
-    "title": "Surviwall",
-    "description": "Deep blue ocean"
+    "image": "surviwall_header.jpeg",
+    "title": "Surviwall"
   }
 ]

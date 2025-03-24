@@ -1,0 +1,30 @@
+{
+  "slug": "feign",
+  "image": "feign_header.jpeg",
+  "title": "Feign",
+  "description": "Feign is a role-playing game with maximum 12 players that takes place in a small town where innocents, imposters and neutrals together. You use your role at night to win and send a person from the village in the morning.",
+  "links": [
+    {
+      "name": "Steam",
+      "icon": "steam.png",
+      "url": "https://store.steampowered.com/app/1436990/Feign/"
+    },
+    {
+      "name": "Google Play",
+      "icon": "google-play.png",
+      "url": "https://play.google.com/store/apps/details?id=com.tenekekafalar.Feign&pcampaignid=web_share"
+    }
+  ],
+  "images": [
+    "feign1.jpg",
+    "feign2.jpg",
+    "feign3.jpg",
+    "feign4.jpg",
+    "feign5.jpg",
+    "feign6.jpg",
+    "feign7.jpg",
+    "feign8.jpg",
+    "feign9.jpg",
+    "feign10.jpg"
+  ]
+}

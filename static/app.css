@@ -3,3 +3,15 @@ body {
     background-color: #263953;
     color: #ffffff;
 }
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
