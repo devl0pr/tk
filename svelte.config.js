@@ -14,8 +14,6 @@
 
 import adapter from '@sveltejs/adapter-static';
 
-const base = '/tk';
-
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
@@ -23,7 +21,7 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-			base
+			base: process.env.BASE_PATH
 		}
 	}
 };
