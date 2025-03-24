@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "feign",
+    "imageSrc": "feign_header.jpeg",
+    "title": "Feign",
+    "description": "Beautiful nature view"
+  },
+  {
+    "slug": "feather-party",
+    "imageSrc": "feather_header.jpeg",
+    "title": "Feather Party",
+    "description": "Urban cityscape"
+  },
+  {
+    "slug": "throwia",
+    "imageSrc": "throwia_header.jpeg",
+    "title": "Throwia",
+    "description": "Majestic mountains"
+  },
+  {
+    "slug": "trakonius",
+    "imageSrc": "tra_header.jpeg",
+    "title": "Trakonius",
+    "description": "Deep blue ocean"
+  },
+  {
+    "slug": "hoop-fighters",
+    "imageSrc": "hoop_header.jpeg",
+    "title": "Hoop Fighters",
+    "description": "Deep blue ocean"
+  },
+  {
+    "slug": "ocean-gap",
+    "imageSrc": "ocean_header.jpeg",
+    "title": "Ocean Gap",
+    "description": "Deep blue ocean"
+  },
+  {
+    "slug": "surviwall",
+    "imageSrc": "surviwall_header.jpeg",
+    "title": "Surviwall",
+    "description": "Deep blue ocean"
+  }
+]
