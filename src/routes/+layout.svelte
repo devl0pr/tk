@@ -1,12 +1,13 @@
 <script>
     import '$lib/styles/preflight.css';
+    import { base } from '$app/paths';
 
     let { children } = $props();
 </script>
 
 <header id="main-header">
     <div class="header">
-        <img src='/img/tk_logo.png' class="tk-logo" alt="TK logo"/>
+        <img src='{base}/img/tk_logo.png' class="tk-logo" alt="TK logo"/>
         <h1 class="title">Teneke Kafalar Studios</h1>
     </div>
 </header>
