@@ -20,7 +20,7 @@
     </div>
     <div class="grid">
         {#each cards as card}
-            <a href={`/games/${card.slug}`} class="card-link">
+            <a href={`${base}/games/${card.slug}`} class="card-link">
                 <Card imageSrc={card.imageSrc} title={card.title} description={card.description} />
             </a>
         {/each}
