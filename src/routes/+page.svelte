@@ -1,9 +1,8 @@
 <script>
     import Card from "$lib/components/Card.svelte";
+    import { base } from '$app/paths';
 
     let { data } = $props();
-
-    console.log(data);
 </script>
 
 
@@ -13,8 +12,8 @@
     </div>
     <div class="grid">
         {#each data.games as card}
-            <a href={`/games/${card.slug}`} class="card-link">
-                <Card imageSrc={'/img/' + card.imageSrc} title={card.title} description={card.description} />
+            <a href={`${base}/games/${card.slug}`} class="card-link">
+                <Card imageSrc={base + '/img/' + card.imageSrc} title={card.title} description={card.description} />
             </a>
         {/each}
     </div>
