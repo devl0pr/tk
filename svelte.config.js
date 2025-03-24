@@ -14,6 +14,8 @@
 
 import adapter from '@sveltejs/adapter-static';
 
+const base = process.env.GITHUB_ACTIONS ? '/tk' : '';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
@@ -21,7 +23,7 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : '/tk'
+			base
 		}
 	}
 };
