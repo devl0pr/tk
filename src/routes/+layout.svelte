@@ -55,6 +55,10 @@
         transform-style: preserve-3d;
         backface-visibility: hidden;
         animation: flipLogo 5s ease-in-out infinite;
+        -webkit-box-shadow: 0 0 32px 2px #a8ae00;
+        -moz-box-shadow: 0 0 32px 2px #a8ae00;
+        box-shadow: 0 0 32px 2px #6e6161;
+        border-radius: 50%;
     }
 
     .title {
