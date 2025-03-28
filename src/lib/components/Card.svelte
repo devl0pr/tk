@@ -13,16 +13,17 @@
 
 <style>
     .card {
-        border: 1px solid #2a4d74;
         border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        background: #2c5c8e;
+        background: #389252;
         cursor: pointer;
+        -webkit-box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 39%);
+        -moz-box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 39%);
+        box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 39%);
     }
 
     .card:hover {
-        background: #2a4d74;
+        background: #216c3a;
     }
 
     .card-image {
@@ -34,6 +35,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background: linear-gradient(158deg, #166f7c 0%, #388e92 50%, #19a78a 100%);
     }
     .card-content h2 {
         font-size: 1.2em;
