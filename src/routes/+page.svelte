@@ -29,13 +29,14 @@
 
     .container {
         max-width: 1200px;
-        margin: 50px auto;
+        margin: 0 20px;
     }
 
     .container-title h2 {
         font-size: 1.56rem;
         text-transform: uppercase;
         font-weight: 600;
+        color: #636363;
     }
 
     @media (min-width: 600px) {
@@ -47,6 +48,13 @@
     @media (min-width: 1200px) {
         .grid {
             grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 1240px) {
+        .container {
+            max-width: 1200px;
+            margin: -80px auto 80px auto;
         }
     }
 </style>
