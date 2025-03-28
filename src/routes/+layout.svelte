@@ -5,7 +5,7 @@
     let {children} = $props();
 </script>
 
-<header id="main-header">
+<header id="main-header" class="color-animation">
     <div class="header">
         <img src='{base}/img/tk_logo.png' class="tk-logo" alt="TK logo"/>
         <h1 class="title">Teneke Kafalar Studios</h1>
@@ -19,22 +19,7 @@
         height: 440px;
         background-size: contain;
 
-        /* Chrome, Safari, Opera */
-        -webkit-animation-name: colors;
-        -webkit-animation-duration: 10s;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-delay: 0s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
-        -webkit-animation-play-state: running;
-        /* Standard syntax */
-        animation-name: colors;
-        animation-duration: 20s;
-        animation-timing-function: linear;
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-play-state: running;
+
     }
 
     .header {
@@ -105,64 +90,6 @@
             align-items: center;
             flex-direction: row;
             gap: 2rem;
-        }
-    }
-
-    /* Chrome, Safari, Opera */
-    @-webkit-keyframes colors {
-        0% {
-            background-color: #000000;
-            left: 0;
-            top: 0;
-        }
-        25% {
-            background-color: #00293d;
-            left: 0;
-            top: 0;
-        }
-        50% {
-            background-color: #2e0b52;
-            left: 0;
-            top: 0;
-        }
-        75% {
-            background-color: #8e44ad;
-            left: 0;
-            top: 0;
-        }
-        100% {
-            background-color: #153753;
-            left: 0;
-            top: 0;
-        }
-    }
-
-    /* Standard syntax */
-    @keyframes colors {
-        0% {
-            background-color: #000000;
-            left: 0;
-            top: 0;
-        }
-        25% {
-            background-color: #00293d;
-            left: 0;
-            top: 0;
-        }
-        50% {
-            background-color: #2e0b52;
-            left: 0;
-            top: 0;
-        }
-        75% {
-            background-color: #8e44ad;
-            left: 0;
-            top: 0;
-        }
-        100% {
-            background-color: #153753;
-            left: 0;
-            top: 0;
         }
     }
 

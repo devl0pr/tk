@@ -6,7 +6,7 @@
 
 <div class="card">
     <img src={image} alt={title} class="card-image" />
-    <div class="card-content">
+    <div class="card-content color-animation">
         <h2>{title}</h2>
     </div>
 </div>
@@ -35,7 +35,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(158deg, #166f7c 0%, #388e92 50%, #19a78a 100%);
+        /*background: linear-gradient(158deg, #166f7c 0%, #388e92 50%, #19a78a 100%);*/
     }
     .card-content h2 {
         font-size: 1.2em;
