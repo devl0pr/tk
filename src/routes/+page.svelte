@@ -5,7 +5,6 @@
     let { data } = $props();
 </script>
 
-
 <div class="container">
     <div class="container-title">
         <h2>Our Games</h2>
