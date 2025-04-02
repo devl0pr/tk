@@ -152,7 +152,7 @@
         </button>
 
         <h1>{data.game.title}</h1>
-        <div class="flex flex-justify-center" style="background: #00000042">
+        <div class="flex flex-justify-center">
             <div class="carousel">
                 <div class="image-thumbnail-carousel">
                     <section class="image-display">
@@ -168,7 +168,7 @@
                             {#each data.game.images as name, i}
                                 <li class="carousel__slide">
                                     <div class="thumbnail">
-                                        <img loading="lazy" src={base + '/games/' + name} alt="">
+                                        <img loading="lazy" src={base + '/img/games/' + data.game.slug + '/' + name} alt="">
                                     </div>
                                 </li>
                             {/each}

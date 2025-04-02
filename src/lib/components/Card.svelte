@@ -16,6 +16,7 @@
         border-radius: 8px;
         overflow: hidden;
         background: #389252;
+        color: #ffffff;
         cursor: pointer;
         -webkit-box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 39%);
         -moz-box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 39%);

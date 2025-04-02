@@ -33,6 +33,12 @@
 </header>
 
 <style>
+
+    .title
+    {
+        color: #ffffff;
+    }
+
     #main-header {
         width: 100%;
         background: #263953 url(/img/clouds.svg) repeat-x bottom center;

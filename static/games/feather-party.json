@@ -1,30 +1,32 @@
 {
-  "slug": "feign",
-  "image": "feign_header.jpeg",
-  "title": "Feign",
-  "description": "Feign is a role-playing game with maximum 12 players that takes place in a small town where innocents, imposters and neutrals together. You use your role at night to win and send a person from the village in the morning.",
+  "slug": "feather-party",
+  "image": "feather_header.jpeg",
+  "title": "Feather Party",
+  "description": "Welcome to the fantastic party on the adorable planet of chicks! Feather Party is a multiplayer party game for up to 8 players. Engage in a diverse array of fun mini-games with friends or against rivals to be the winner of this party!",
   "links": [
     {
       "name": "Steam",
       "icon": "steam.png",
-      "url": "https://store.steampowered.com/app/1436990/Feign/"
-    },
-    {
-      "name": "Google Play",
-      "icon": "google-play.png",
-      "url": "https://play.google.com/store/apps/details?id=com.tenekekafalar.Feign&pcampaignid=web_share"
+      "url": "https://store.steampowered.com/app/2300230/Feather_Party/"
     }
   ],
   "images": [
-    "feign1.jpg",
-    "feign2.jpg",
-    "feign3.jpg",
-    "feign4.jpg",
-    "feign5.jpg",
-    "feign6.jpg",
-    "feign7.jpg",
-    "feign8.jpg",
-    "feign9.jpg",
-    "feign10.jpg"
+    "featherparty2.jpg",
+    "featherparty3.jpg",
+    "featherparty4.jpg",
+    "featherparty5.jpg",
+    "featherparty6.jpg",
+    "featherparty7.jpg",
+    "featherparty8.jpg",
+    "featherparty9.jpg",
+    "featherparty10.jpg",
+    "featherparty11.jpg",
+    "featherparty12.jpg",
+    "featherparty13.jpg",
+    "featherparty14.jpg",
+    "featherparty15.jpg",
+    "featherparty16.jpg",
+    "featherparty17.jpg",
+    "featherparty18.jpg"
   ]
 }

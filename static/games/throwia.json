@@ -1,0 +1,23 @@
+{
+  "slug": "throwia",
+  "image": "throwia_header.jpg",
+  "title": "Throwia",
+  "description": "Welcome to the turn based MMO world of Throwia... Design your character as you wish, choose the weapons that suit your play style, level up, and get stronger in the rogue-like adventures.. For new equipment, blast or dig your opponents... Build your team and reach the top of the rankings! \uD83D\uDCA3",
+  "links": [
+    {
+      "name": "Steam",
+      "icon": "steam.png",
+      "url": "https://store.steampowered.com/app/2255360/Throwia/"
+    }
+  ],
+  "images": [
+    "throwia1.jpg",
+    "throwia2.jpg",
+    "throwia3.jpg",
+    "throwia4.jpg",
+    "throwia5.jpg",
+    "throwia6.jpg",
+    "throwia7.jpg",
+    "throwia8.jpg"
+  ]
+}
