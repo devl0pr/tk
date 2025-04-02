@@ -18,9 +18,9 @@
         background: #389252;
         color: #ffffff;
         cursor: pointer;
-        -webkit-box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 39%);
-        -moz-box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 39%);
-        box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 39%);
+        -webkit-box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 29%);
+        -moz-box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 29%);
+        box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 29%);
     }
 
     .card:hover {
@@ -32,7 +32,7 @@
         object-fit: cover;
     }
     .card-content {
-        padding: 16px;
+        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
