@@ -5,6 +5,10 @@
     let {children} = $props();
 </script>
 
+<svelte:head>
+    <title>Teneke Kafalar Studios</title>
+</svelte:head>
+
 <header id="main-header" class="color-animation">
     <div class="header">
         <img src='{base}/img/tk_logo.png' class="tk-logo" alt="TK logo"/>
@@ -44,8 +48,6 @@
         background: #263953 url(/img/clouds.svg) repeat-x bottom center;
         height: 440px;
         background-size: contain;
-
-
     }
 
     .star-container {

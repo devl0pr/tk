@@ -1,8 +1,8 @@
 <script>
-    import { base } from '$app/paths';
-    import { onMount } from 'svelte';
+    import {base} from '$app/paths';
+    import {onMount} from 'svelte';
 
-    let { data } = $props();
+    let {data} = $props();
 
     let currentSlide = 0;
     let slides;
@@ -61,8 +61,8 @@
 
         const scrollToActiveSlide = (activeSlide) => {
             const carouselSlider = document.querySelector(".carousel__slider");
-            const { offsetLeft, offsetWidth } = activeSlide;
-            const { clientWidth } = carouselSlider;
+            const {offsetLeft, offsetWidth} = activeSlide;
+            const {clientWidth} = carouselSlider;
 
             carouselSlider.scrollTo({
                 left: offsetLeft - clientWidth / 2 + offsetWidth / 2,
@@ -145,6 +145,14 @@
 
 </script>
 
+<svelte:head>
+    {#if data.game}
+        <title>{data.game.title} - Teneke Kafalar Studios  </title>
+    {:else}
+        <title>Not Found - Teneke Kafalar Studios  </title>
+    {/if}
+</svelte:head>
+
 {#if data.game}
     <div class="container">
         <button onclick={() => history.back()}>
@@ -160,22 +168,27 @@
                     </section>
                     <section class="thumbnail-carousel">
                         <button type="button" class="carousel__btn prev" aria-label="Previous slide">
-                            <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-left-circle" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                            <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-left-circle"
+                                 viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
                             </svg>
                         </button>
                         <ul class="carousel__slider">
                             {#each data.game.images as name, i}
                                 <li class="carousel__slide">
                                     <div class="thumbnail">
-                                        <img loading="lazy" src={base + '/img/games/' + data.game.slug + '/' + name} alt="">
+                                        <img loading="lazy" src={base + '/img/games/' + data.game.slug + '/' + name}
+                                             alt="">
                                     </div>
                                 </li>
                             {/each}
                         </ul>
                         <button type="button" class="carousel__btn next" aria-label="Next slide">
-                            <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-right-circle" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                            <svg width="16" height="16" fill="currentColor" class="arrow-icon arrow-right-circle"
+                                 viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
                             </svg>
                         </button>
                     </section>
@@ -183,13 +196,14 @@
             </div>
             <div class="info">
                 <div>
-                    <img src={base + '/img/' + data.game.image} alt={data.game.title} />
+                    <img src={base + '/img/' + data.game.image} alt={data.game.title}/>
                     <p style="font-size: .9rem;padding: 10px 10px 0 0;">{data.game.description}</p>
                 </div>
                 <div class="links">
                     {#each data.game.links as link, i}
                         <a href="{link.url}" target="_blank" rel="noopener noreferrer" class="link-button">
-                            <img class="links-img" loading="lazy" src={base + '/img/' + link.icon} alt="{link.name}"> <span style="font-size: .9rem;">{link.name}</span>
+                            <img class="links-img" loading="lazy" src={base + '/img/' + link.icon} alt="{link.name}">
+                            <span style="font-size: .9rem;">{link.name}</span>
                         </a>
                     {/each}
                 </div>
@@ -197,21 +211,36 @@
         </div>
 
 
-
-
-<!--        <video controls>-->
-<!--&lt;!&ndash;            <source src={data.game.video} type="video/mp4">&ndash;&gt;-->
-<!--            Your browser does not support the video tag.-->
-<!--        </video>-->
+        <!--        <video controls>-->
+        <!--&lt;!&ndash;            <source src={data.game.video} type="video/mp4">&ndash;&gt;-->
+        <!--            Your browser does not support the video tag.-->
+        <!--        </video>-->
     </div>
 {:else}
-    <p>Game not found.</p>
+    <section class="page_404">
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col-sm-12 ">
+                    <div class="col-sm-10 col-sm-offset-1  text-center">
+                        <div class="four_zero_four_bg">
+                            <h1 class="text-center ">404</h1>
+                        </div>
+                        <div class="contant_box_404">
+                            <h3 class="h2">
+                                Look like you're lost
+                            </h3>
+                            <p>the page you are looking for not avaible!</p>
+                            <a onclick={() => history.back()} class="link_404">Go to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {/if}
 
 
-
 <style>
-
     :root {
         --items: 5;
         --gap: 0.75rem;
@@ -351,6 +380,7 @@
         border: 1px solid #39495e;
         min-width: 150px;
     }
+
     @media (max-width: 680px) {
         .image-thumbnail-carousel {
             width: 90vw;
@@ -423,5 +453,37 @@
     }
 
 
+    .page_404 {
+        background: #fff;
+
+    }
+
+    .four_zero_four_bg {
+        background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+        height: 400px;
+        background-position: center;
+    }
+
+    .four_zero_four_bg h1 {
+        font-size: 80px;
+        position: relative;
+        top: -80px;
+    }
+
+    .four_zero_four_bg h3 {
+        font-size: 80px;
+    }
+
+    .link_404 {
+        color: #fff !important;
+        padding: 10px 20px;
+        background: #39ac31;
+        margin: 20px 0;
+        display: inline-block;
+    }
+
+    .contant_box_404 {
+        margin-top: -50px;
+    }
 
 </style>
