@@ -154,13 +154,28 @@
 </svelte:head>
 
 {#if data.game}
+    <h1>Page is under development</h1>
     <div class="container">
-        <button onclick={() => history.back()}>
+        <button style="cursor: pointer; font-size: 1.2rem" onclick={() => history.back()}>
             ⬅️ Back to Games
         </button>
 
         <h1>{data.game.title}</h1>
-        <div class="flex flex-justify-center">
+        <div class="">
+            <div class="info">
+                <div class="card-detail color-animation">
+                    <img src={base + '/img/' + data.game.image} alt={data.game.title}/>
+                    <p style="font-size: 1rem;padding: 20px 20px 20px 20px;color: #ffffff;">{data.game.description}</p>
+                </div>
+                <div class="links">
+                    {#each data.game.links as link, i}
+                        <a href="{link.url}" target="_blank" rel="noopener noreferrer" class="link-button">
+                            <img class="links-img" loading="lazy" src={base + '/img/' + link.icon} alt="{link.name}">
+                            <span>{link.name}</span>
+                        </a>
+                    {/each}
+                </div>
+            </div>
             <div class="carousel">
                 <div class="image-thumbnail-carousel">
                     <section class="image-display">
@@ -194,20 +209,7 @@
                     </section>
                 </div>
             </div>
-            <div class="info">
-                <div>
-                    <img src={base + '/img/' + data.game.image} alt={data.game.title}/>
-                    <p style="font-size: .9rem;padding: 10px 10px 0 0;">{data.game.description}</p>
-                </div>
-                <div class="links">
-                    {#each data.game.links as link, i}
-                        <a href="{link.url}" target="_blank" rel="noopener noreferrer" class="link-button">
-                            <img class="links-img" loading="lazy" src={base + '/img/' + link.icon} alt="{link.name}">
-                            <span style="font-size: .9rem;">{link.name}</span>
-                        </a>
-                    {/each}
-                </div>
-            </div>
+
         </div>
 
 
@@ -257,7 +259,14 @@
 
     .container {
         max-width: 1200px;
-        margin: 50px auto;
+        margin: 0px auto;
+    }
+
+    @media (min-width: 1240px) {
+        .container {
+            max-width: 1200px;
+            margin: -80px auto 80px auto;
+        }
     }
 
     h1 {
@@ -361,6 +370,7 @@
 
     .links {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
         padding: 30px 0;
     }
@@ -379,6 +389,9 @@
         padding: 10px;
         border: 1px solid #39495e;
         min-width: 150px;
+        justify-content: center;
+        font-size: .9rem;
+        color:#ffffff
     }
 
     @media (max-width: 680px) {
@@ -452,6 +465,11 @@
         }
     }
 
+    .card-detail {
+        -webkit-box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 29%);
+        -moz-box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 29%);
+        box-shadow: 3px 6px 13px 0 rgb(0 0 0 / 29%);
+    }
 
     .page_404 {
         background: #fff;
