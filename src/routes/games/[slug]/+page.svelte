@@ -659,6 +659,12 @@
     }
 
     @media (max-width:500px) {
+        .image-thumbnail-carousel {
+            width: clamp(360px, 90vw, 820px);
+        }
+    }
+
+    @media (max-width:366px) {
         .carousel {
             display: none;
         }
