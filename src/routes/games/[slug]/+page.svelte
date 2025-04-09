@@ -154,28 +154,13 @@
 </svelte:head>
 
 {#if data.game}
-    <h1>Page is under development</h1>
     <div class="container">
         <button style="cursor: pointer; font-size: 1.2rem" onclick={() => history.back()}>
             ⬅️ Back to Games
         </button>
 
         <h1>{data.game.title}</h1>
-        <div class="">
-            <div class="info">
-                <div class="card-detail color-animation">
-                    <img src={base + '/img/' + data.game.image} alt={data.game.title}/>
-                    <p style="font-size: 1rem;padding: 20px 20px 20px 20px;color: #ffffff;">{data.game.description}</p>
-                </div>
-                <div class="links">
-                    {#each data.game.links as link, i}
-                        <a href="{link.url}" target="_blank" rel="noopener noreferrer" class="link-button">
-                            <img class="links-img" loading="lazy" src={base + '/img/' + link.icon} alt="{link.name}">
-                            <span>{link.name}</span>
-                        </a>
-                    {/each}
-                </div>
-            </div>
+        <div class="info-container">
             <div class="carousel">
                 <div class="image-thumbnail-carousel">
                     <section class="image-display">
@@ -210,13 +195,27 @@
                 </div>
             </div>
 
+            <div class="info">
+                <div class="main-image">
+                    <img src={base + '/img/' + data.game.image} alt={data.game.title}/>
+                </div>
+                <div class="color-animation card-detail">
+                    <p style="font-size: 1rem;padding: 20px 20px 20px 20px;color: #ffffff;">{data.game.description}</p>
+                </div>
+            </div>
+
+<!--            <div class="links">-->
+<!--                {#each data.game.links as link, i}-->
+<!--                    <a href="{link.url}" target="_blank" rel="noopener noreferrer" class="steambutton">-->
+<!--                        <span>{link.name}</span>-->
+<!--                        <div class="icon">-->
+<!--                            <i class="fa fa-steam-square"></i>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                {/each}-->
+<!--            </div>-->
+
         </div>
-
-
-        <!--        <video controls>-->
-        <!--&lt;!&ndash;            <source src={data.game.video} type="video/mp4">&ndash;&gt;-->
-        <!--            Your browser does not support the video tag.-->
-        <!--        </video>-->
     </div>
 {:else}
     <section class="page_404">
@@ -276,7 +275,10 @@
     }
 
     .info {
-        padding: 0 0 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0;
     }
 
     .image-thumbnail-carousel {
@@ -502,6 +504,122 @@
 
     .contant_box_404 {
         margin-top: -50px;
+    }
+
+    .steambutton {
+        display: block;
+        background-color: #6f9f31;
+        width: 270px;
+        height: 50px;
+        line-height: 50px;
+        margin: auto;
+        color: #fff;
+        position: absolute;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .steambutton span {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        width: 75%;
+        font-size: 14px;
+        text-transform: uppercase;
+        left: 0;
+        -webkit-transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+        transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+    }
+
+    .steambutton span,
+    .steambutton .icon {
+        display: block;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        top: 0;
+    }
+
+    .steambutton .icon .fa {
+        font-size: 30px;
+        line-height: 50px;
+        -webkit-transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+        transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+    }
+
+    .steambutton .icon {
+        width: 25%;
+        right: 0;
+        -webkit-transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+        transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+    }
+
+    .steambutton span,
+    .steambutton .icon {
+        display: block;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        top: 0;
+    }
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+    }
+
+    .steambutton span:after {
+        content: '';
+        background-color: #5d8628;
+        width: 2px;
+        height: 70%;
+        position: absolute;
+        top: 15%;
+        right: -1px;
+    }
+
+    .steambutton.success span,
+    .steambutton:hover span {
+        left: -72%;
+        opacity: 0;
+    }
+
+    .steambutton.success .icon,
+    .steambutton:hover .icon {
+        width: 100%;
+    }
+
+    .steambutton.success .icon .fa,
+    .steambutton:hover .icon .fa {
+        font-size: 45px;
+    }
+
+    .info-container {
+        display: flex;
+        justify-content: center;
+        padding: 0 1rem
+    }
+
+    @media (max-width: 1150px) {
+        .info-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info {
+            order: 1;
+        }
+
+        .carousel {
+            order: 2;
+        }
+
     }
 
 </style>
