@@ -155,11 +155,12 @@
 
 {#if data.game}
     <div class="container">
-        <button style="cursor: pointer; font-size: 1.2rem" onclick={() => history.back()}>
-            ⬅️ Back to Games
-        </button>
-
-        <h1>{data.game.title}</h1>
+       <div style="padding: 0 16px">
+           <button class="back-button" onclick={() => history.back()}>
+               <img loading="lazy" src={base + '/img/back.png'} alt=""> <span>Back to Games</span>
+           </button>
+           <h1>{data.game.title}</h1>
+       </div>
         <div class="info-container">
             <div class="carousel">
                 <div class="image-thumbnail-carousel">
@@ -178,8 +179,7 @@
                             {#each data.game.images as name, i}
                                 <li class="carousel__slide">
                                     <div class="thumbnail">
-                                        <img loading="lazy" src={base + '/img/games/' + data.game.slug + '/' + name}
-                                             alt="">
+                                        <img loading="lazy" src={base + '/img/games/' + data.game.slug + '/' + name} alt="">
                                     </div>
                                 </li>
                             {/each}
@@ -261,10 +261,9 @@
         margin: 0px auto;
     }
 
-    @media (min-width: 1240px) {
+    @media (min-width: 940px) {
         .container {
-            max-width: 1200px;
-            margin: -80px auto 80px auto;
+            margin: -150px auto 80px auto;
         }
     }
 
@@ -282,7 +281,7 @@
     }
 
     .image-thumbnail-carousel {
-        padding: 0 1rem 1rem 0;
+        padding: 0 0rem 1rem 0;
         width: clamp(360px, 90vw, 820px);
         display: flex;
         flex-flow: column;
@@ -600,19 +599,34 @@
         font-size: 45px;
     }
 
+    .back-button {
+        cursor: pointer;
+        font-size: 1.2rem;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        margin: 0 0 30px 0;
+    }
+
     .info-container {
         display: flex;
         justify-content: center;
-        padding: 0 1rem
+        padding: 0 1rem;
+        gap: 1rem;
     }
 
     @media (max-width: 1150px) {
         .info-container {
             flex-direction: column;
             align-items: center;
+            gap: 1rem;
         }
 
         .info {
+            flex-direction: row;
+            align-items: self-start;
             order: 1;
         }
 
@@ -620,6 +634,34 @@
             order: 2;
         }
 
+        .image-thumbnail-carousel {
+            width: auto;
+        }
+
+        .card-detail {
+            width: 70%;
+        }
+
+    }
+
+    @media (max-width:700px) {
+        .info {
+            flex-direction: column;
+        }
+
+        .card-detail {
+            width: 100%;
+        }
+
+        .main-image, .main-image img {
+            width: 100%;
+        }
+    }
+
+    @media (max-width:500px) {
+        .carousel {
+            display: none;
+        }
     }
 
 </style>

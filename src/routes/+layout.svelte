@@ -255,6 +255,7 @@
     .footer {
         background-color: #1d180d;
         padding: 70px 0;
+        margin-top: 60px;
     }
 
     .footer-col {
